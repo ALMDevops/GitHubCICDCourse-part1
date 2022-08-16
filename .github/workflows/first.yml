@@ -21,3 +21,6 @@ jobs:
       - name: step 2
         run: "Get-ChildItem Env: | Sort-Object Name"
 
+  job3:
+    needs: [job1, job2]
+    name: third job
